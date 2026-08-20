@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trade with Purab</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1782915136060425');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1782915136060425&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#020617);
+overflow:hidden;
+color:white;
+}
+
+/* floating particles */
+
+.particle{
+position:absolute;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+opacity:.6;
+animation:move 10s linear infinite;
+}
+
+@keyframes move{
+0%{transform:translateY(0)}
+100%{transform:translateY(-1000px)}
+}
+
+/* card */
+
+.card{
+width:360px;
+padding:45px 30px;
+border-radius:25px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.1);
+text-align:center;
+box-shadow:0 0 60px rgba(0,255,255,.15);
+}
+
+/* profile */
+
+.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+border:5px solid #00f5ff;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+/* heading */
+
+h2{
+margin-bottom:10px;
+font-size:24px;
+}
+
+/* text */
+
+.text{
+font-size:14px;
+line-height:1.6;
+opacity:.9;
+margin-bottom:30px;
+}
+
+/* CTA button */
+
+.btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:20px 50px;
+border-radius:60px;
+background:linear-gradient(45deg,#00f5ff,#00ff9c);
+color:black;
+text-decoration:none;
+font-weight:bold;
+font-size:20px;
+position:relative;
+animation:pulse 1.8s infinite;
+}
+
+@keyframes pulse{
+
+0%{box-shadow:0 0 0 0 rgba(0,255,200,.7)}
+
+70%{box-shadow:0 0 0 30px rgba(0,255,200,0)}
+
+100%{box-shadow:0 0 0 0 rgba(0,255,200,0)}
+
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* circular timer */
+
+.timer{
+margin-top:25px;
+font-size:14px;
+opacity:.9;
+}
+
+/* disclaimer */
+
+.disclaimer{
+margin-top:20px;
+font-size:11px;
+opacity:.6;
+text-align:center;
+}
+
+.ads{
+margin-top:6px;
+font-size:12px;
+text-align:center;
+}
+
+.ads a{
+color:#00f5ff;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script>
+
+/* create particles */
+
+for(let i=0;i<70;i++){
+
+let p=document.createElement("div");
+
+p.className="particle";
+
+p.style.left=Math.random()*100+"%";
+
+p.style.top=Math.random()*100+"%";
+
+p.style.animationDuration=5+Math.random()*10+"s";
+
+document.body.appendChild(p);
+
+}
+
+</script>
+
+<div>
+
+<div class="card">
+
+<img src="p.jpg" class="profile">
+
+<h2>👑Trade With Purab👑</h2>
+
+<div class="text">
+
+✔️ Trusted by 5,000+ Traders<br>
+✔️ Daily Consistent Setups<br>
+✔️ 5–7 High Probability Trades
+
+</div>
+
+<a class="btn" href="https://telegram.me/+u8zrFlAxvKc3YzU1" target="_blank">
+
+<i class="fab fa-telegram"></i>
+
+Join Now Free
+
+<i class="fab fa-telegram"></i>
+
+</a>
+
+<div class="timer">
+
+Redirecting in <span id="count">30</span> seconds...
+
+</div>
+
+</div>
+
+<div class="disclaimer">
+
+This channel is for educational and informational purposes only.
+
+</div>
+
+<div class="ads">
+
+Ads Managed by <a href="https://telegram.me/+LiETHEERYtgzNjU1" target="_blank">APEagency</a>
+
+</div>
+
+</div>
+
+<script>
+
+let time=30;
+
+let counter=document.getElementById("count");
+
+setInterval(()=>{
+
+time--;
+
+counter.innerText=time;
+
+if(time<=0){
+
+window.location.href="https://telegram.me/+u8zrFlAxvKc3YzU1";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
